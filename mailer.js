@@ -37,7 +37,7 @@ Mailer.prototype.send = function(){
 // Modify `send` so that it checks if `currentMessage` has both 
 // a `sendTo` and `subject` before pushing to `sentMessages`.
 
-Mailer.prototype.sendCareful = function(){
+Mailer.prototype.send = function(){
 	this.currentMessage.from = this.from;
 	if (this.currentMessage.sendTo) {
 	  if (this.currentMessage.subject) {
